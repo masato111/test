@@ -1,0 +1,56 @@
+#pragma strict
+
+function Start () {
+
+}
+
+function Update () {
+
+   
+count = 0;
+Random rnd = new Random();
+int b = 0;
+int c = 0;
+
+while(if(Input.GetButton("Fire1"))){
+  count = count + 1;
+  switch(count){
+    case 1 :  //count = 1
+        b = rnd.nextInt(6か5); //bは５回のうち何回目か決める
+        c = rnd.nextInt(6か5); 
+    　　 //一回目のアニメーションはa,b,cどれを流すか 
+         if(B == 1 || C == 1){
+            if(B == 1){Bのアニメーションを再生}
+            if(B != C && C == 1){Cのアニメーションを再生}
+         }else{Aのアニメーションを再生} 
+　　　　//アニメーションが終わるまで待っててくれない場合はアニメーションが終わるまで他の作業をしないという指示を出す
+
+        break;
+
+    case 2 :  //count = 2
+         //2回目のアニメーションはa,b,cどれを流すか
+          if(B == 2 || C == 2){
+            if(B == 2){Bのアニメーションを再生}
+            if(B != C && C == 2){Cのアニメーションを再生}
+         }else{Aのアニメーションを再生} 
+
+        break;
+      
+    case 5 :  //count = 5
+         //5回目のアニメーションはa,b,cどれを流すか
+         count = 0;
+         break;
+
+     }
+}
+          
+   while(ドラゴンを探して存在した場合(true)は実行させる){
+   　　　　常に羽ばたきアニメーションを再生;
+   　　　　５回に１回上昇アニメーションを再生；
+   　　　　５階に１回カミツキアニメーションを再生；
+
+
+
+
+
+
